@@ -21,9 +21,9 @@ public class SuppliersApi {
     SupplierService supplierService;
 
     @RequestMapping(value="/{id}",  produces = {"application/json"}, method = RequestMethod.GET)
-    public ResponseEntity<Supplier> getSupplier(@PathVariable(name = "id") Integer SupplierId){
-        log.info("ProductsController - getProducts");
-        Supplier supplier = supplierService.getSupplierAndProducts(SupplierId);
+    public ResponseEntity<Supplier> getSupplier(@PathVariable(name = "id") Integer supplierId){
+        log.info("ProductsController - getSupplier :" + supplierId);
+        Supplier supplier = supplierService.getSupplierAndProducts(supplierId);
         return new ResponseEntity<>(supplier, HttpStatus.OK);
     }
 

@@ -37,10 +37,17 @@ dependencies {
 	}
 
 	implementation 'org.springframework.boot:spring-boot-starter-security'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
+	testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.4.RELEASE'
 
 	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
 	compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
 
+	testImplementation 'io.cucumber:cucumber-java:5.0.0'
+	testImplementation 'io.cucumber:cucumber-junit:5.0.0'
+	// https://mvnrepository.com/artifact/io.cucumber/cucumber-spring
+
+	compile group: 'io.cucumber', name: 'cucumber-spring', version: '5.0.0'
 }
 
 test {

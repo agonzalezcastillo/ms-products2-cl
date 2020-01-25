@@ -1,0 +1,224 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-25T19:43:36.736Z",
+        "line": 3,
+        "name": "Client makes call to GET rest product endpoint",
+        "description": "",
+        "id": "products-operations;client-makes-call-to-get-rest-product-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 338308500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "some products have been stored in the database",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.someProductsHaveBeenStoredInTheDatabase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6006400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client makes a call to get rest product endpoint",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.theClientMakesACallToGetRestProductEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6004300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client gets a list of products",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.theClientGetsAListOfProducts()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-25T19:43:37.124Z",
+        "line": 8,
+        "name": "Client can update Products quantity",
+        "description": "",
+        "id": "products-operations;client-can-update-products-quantity",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9008500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "some products have been stored in the database",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.someProductsHaveBeenStoredInTheDatabase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32028900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the client makes a call to PUT rest product endpoint",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.theClientMakesACallToPUTRestProductEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5005000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the client gets product quantity updated to 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 44
+                }
+              ],
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.theClientGetsProductQuantityUpdated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Products operations",
+    "description": "",
+    "id": "products-operations",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/resources/Product.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-25T19:43:37.175Z",
+        "line": 3,
+        "name": "Client makes call to GET rest supplier endpoint",
+        "description": "",
+        "id": "a-supplier-and-his-products-can-be-retrieved;client-makes-call-to-get-rest-supplier-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19017700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "i can get a supplier",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.i_can_get_a_supplier()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5003900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client receives an ok status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.the_client_receives_an_ok_status_code_200(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6005800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client Receives an object",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.the_client_Receives_an_object()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-25T19:43:37.210Z",
+        "line": 8,
+        "name": "Client makes call to DELETE rest supplier endpoint",
+        "description": "",
+        "id": "a-supplier-and-his-products-can-be-retrieved;client-makes-call-to-delete-rest-supplier-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8007400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "there is a supplier stored in the database",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.thereIsASupplierStoredInTheDatabase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18016300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the client makes a call to DELETE supplier endpoint",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.theClientMakesACallToDELETESupplierEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5004400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the client Receives the list of suppliers and products updated",
+            "match": {
+              "location": "com.bct.msproducts2cl.ProjectStepDefs.theClientReceivesTheListOfSuppliersAndProductsUpdated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "A supplier and his products can be retrieved",
+    "description": "",
+    "id": "a-supplier-and-his-products-can-be-retrieved",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/resources/Supplier.feature",
+    "tags": []
+  }
+]
